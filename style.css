@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Styling */
+header {
+  background-color: #f0f2f5; /* Main header color */
+  padding: 15px 20px;
+  color: white;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.container img {
+  max-width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.container h1 {
+  font-size: 24px;
+  color: black;
+  margin: 0;
+  flex-grow: 1;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #4a6fe3; /* Slightly darker hover color */
+}
+
+button {
+  padding: 8px 16px;
+  margin-left: 20px;
+  border: none;
+  background-color: #668cff;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #4a6fe3; /* Hover color to complement main button color */
+}
+
+#hero {
+  background: linear-gradient(to bottom right); /* Add a gradient background */
+  padding: 50px 20px;
+  color: black;
+  text-align: center;
+}
+
+#hero .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#hero img {
+  max-width: 500px; /* Adjust size of the logo */
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+#hero h1 {
+  font-size: 36px;
+  margin: 20px 0 10px;
+  line-height: 1.2;
+}
+
+#hero p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto 20px;
+  line-height: 1.5;
+}
+
+#hero .btn {
+  padding: 12px 24px;
+  background-color: #f39c12;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+#hero .btn:hover {
+  background-color: #e67e22;
+}
+
+#features {
+  background-color: #f9f9f9; /* Light background to differentiate from other sections */
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#features .container {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#features h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #333; /* Dark color for better readability */
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.feature-item img {
+  max-width: 650px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.feature-item h2 {
+  font-size: 24px;
+  color: #4a6fe3; /* Match color theme of the site */
+  margin-bottom: 10px;
+}
+
+.feature-item p {
+  max-width: 600px;
+  color: #555;
+  line-height: 1.6;
+  margin: 0 auto;
+}
+
+#about .container {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#about p {
+  max-width: 600px;
+  color: #555;
+  line-height: 1.6;
+  margin: 0 auto 20px;
+}
+
+#about h1 {
+  font-size: 32px;
+  margin: 20px 0 10px;
+  color: #333;
+}
+
+footer {
+  background-color: #333; /* Dark background color */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: #4a6fe3; /* Slightly darker hover color */
+}
+
+
+
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  ul {
+    flex-direction: column;
+  }
+
+  li {
+    margin: 5px 0;
+  }
+
+  button {
+    margin-top: 10px;
+  }
+  #hero h1 {
+    font-size: 28px;
+  }
+
+  #hero p {
+    font-size: 16px;
+  }
+
+  #hero img {
+    max-width: 150px;
+  }
+   .feature-item {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .feature-item img {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  #hero h1 {
+    font-size: 24px;
+  }
+
+  #hero p {
+    font-size: 14px;
+  }
+
+  #hero .btn {
+    padding: 10px 20px;
+  }
+   #features h1 {
+    font-size: 28px;
+  }
+
+  .feature-item h2 {
+    font-size: 20px;
+  }
+
+  .feature-item p {
+    font-size: 14px;
+  }
+}
